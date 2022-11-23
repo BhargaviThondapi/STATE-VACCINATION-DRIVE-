@@ -1,0 +1,68 @@
+vaccination_drive_main.c: (in function main)
+vaccination_drive_main.c:11:8: Variable choice used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+vaccination_drive_main.c:19:3: Return value (type int) ignored:
+                                  scanf("%d", &choice)
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+vaccination_drive_main.c:22:11: Return value (type int) ignored:
+                                   vaccination_bene...
+vaccination_drive_main.c:24:11: Return value (type int) ignored: admin_login()
+vaccination_drive_main.c:31:2: Path with no return in function declared to
+                                  return int
+  There is a path through a function declared to return a value on which there
+  is no return statement. This means the execution may fall through without
+  returning a meaningful result to the caller. (Use -noret to inhibit warning)
+vaccination_drive_main.c:7:7: Variable admin_pass declared but not used
+  A variable is declared but never used. Use /*@unused@*/ in front of
+  declaration to suppress message. (Use -varuse to inhibit warning)
+vaccination_drive_main.c: (in function vaccination_beneficiary_login)
+vaccination_drive_main.c:37:8: Variable choice2 used before definition
+vaccination_drive_main.c:41:3: Return value (type int) ignored:
+                                  scanf("%d", &cho...
+vaccination_drive_main.c:44:11: Return value (type int) ignored: new_user()
+vaccination_drive_main.c:46:11: Return value (type int) ignored:
+                                   registered_user()
+vaccination_drive_main.c:53:2: Path with no return in function declared to
+                                  return int
+vaccination_drive_main.c: (in function vaccination_admin_login)
+vaccination_drive_main.c:58:2: Return value (type int) ignored:
+                                  scanf("%d\n", &c...
+vaccination_drive_main.c:65:11: Return value (type int) ignored:
+                                   view_beneficiary...
+vaccination_drive_main.c:67:11: Return value (type int) ignored:
+                                   add_beneficiary_...
+vaccination_drive_main.c:69:11: Return value (type int) ignored:
+                                   edit_beneficiary...
+vaccination_drive_main.c:71:11: Return value (type int) ignored:
+                                   delete_beneficia...
+vaccination_drive_main.c:73:11: Return value (type int) ignored:
+                                   display_fully_va...
+vaccination_drive_main.c:75:11: Return value (type int) ignored:
+                                   display_partiall...
+vaccination_drive_main.c:77:11: Return value (type int) ignored:
+                                   display_today_va...
+vaccination_drive_main.c:59:8: Suspected infinite loop.  No value used in loop
+    test (choice3) is modified by test or loop body.
+  This appears to be an infinite loop. Nothing in the body of the loop or the
+  loop test modifies the value of the loop test. Perhaps the specification of a
+  function called in the loop body is missing a modification. (Use -infloops to
+  inhibit warning)
+vaccination_drive_main.c: (in function new_user)
+vaccination_drive_main.c:107:2: Path with no return in function declared to
+                                   return int
+vaccination_drive_main.c: (in function registered_user)
+vaccination_drive_main.c:112:8: Variable choice4 used before definition
+vaccination_drive_main.c:117:3: Return value (type int) ignored:
+                                   scanf("%d", &cho...
+vaccination_drive_main.c:120:11: Return value (type int) ignored:
+                                    select_center()
+vaccination_drive_main.c:122:11: Return value (type int) ignored: book_slot()
+vaccination_drive_main.c:124:11: Return value (type int) ignored:
+                                    view_details()
+vaccination_drive_main.c:126:11: Return value (type int) ignored:
+                                    get_vaccinated()
+vaccination_drive_main.c:134:2: Path with no return in function declared to
+                                   return int
+
