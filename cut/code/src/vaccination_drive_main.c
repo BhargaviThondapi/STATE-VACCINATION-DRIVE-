@@ -1,5 +1,5 @@
 /********************************************************************************************************************************************************************
-* * FILE NAME  			:  main.c
+* * FILE NAME  			:  vaccination_drive_main.c
 *
 * * DESCRIPTION 		:  This file consists of Main and Menu displays the functions in it
 *
