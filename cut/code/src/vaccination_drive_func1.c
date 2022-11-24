@@ -1,3 +1,10 @@
+/************************************************************************************************************
+* * FILE NAME 			: vaccination_drive_func1.c
+* * DESCRIPTION 		: This file consists of file_to_list and list_to_file
+					operations for beneficiary and admin details
+*
+* ****************************************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
