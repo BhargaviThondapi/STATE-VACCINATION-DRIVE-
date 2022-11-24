@@ -1,3 +1,15 @@
+/**********************************************************************************************************************
+*
+* FILE NAME 		: vaccination_drive_func.c
+*
+* DESCRIPTION 		: This file defines the functions in the beneficiary menu and admin to 
+				perform various operations in the beneficiary database
+*
+****************************************************************************************************/
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
