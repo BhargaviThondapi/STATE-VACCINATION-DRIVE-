@@ -1,0 +1,44 @@
+==1313600== Memcheck, a memory error detector
+==1313600== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1313600== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==1313600== Command: ./vaccineapp
+==1313600== 
+==1313600== Conditional jump or move depends on uninitialised value(s)
+==1313600==    at 0x1092AF: main (in /home/batch94-user4/project/vaccineapp)
+==1313600== 
+==1313600== Conditional jump or move depends on uninitialised value(s)
+==1313600==    at 0x10933F: vaccination_beneficiary_login (in /home/batch94-user4/project/vaccineapp)
+==1313600==    by 0x10928D: main (in /home/batch94-user4/project/vaccineapp)
+==1313600== 
+==1313600== Conditional jump or move depends on uninitialised value(s)
+==1313600==    at 0x1094F7: registered_user (in /home/batch94-user4/project/vaccineapp)
+==1313600==    by 0x109329: vaccination_beneficiary_login (in /home/batch94-user4/project/vaccineapp)
+==1313600==    by 0x10928D: main (in /home/batch94-user4/project/vaccineapp)
+==1313600== 
+==1313600== 
+==1313600== Process terminating with default action of signal 2 (SIGINT)
+==1313600==    at 0x493884E: read (read.c:26)
+==1313600==    by 0x48CA899: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:517)
+==1313600==    by 0x48CBB01: _IO_default_uflow (genops.c:362)
+==1313600==    by 0x48A2137: __vfscanf_internal (vfscanf-internal.c:627)
+==1313600==    by 0x48A118D: __isoc99_scanf (isoc99_scanf.c:30)
+==1313600==    by 0x109CFF: select_center (in /home/batch94-user4/project/vaccineapp)
+==1313600==    by 0x1094B8: registered_user (in /home/batch94-user4/project/vaccineapp)
+==1313600==    by 0x109329: vaccination_beneficiary_login (in /home/batch94-user4/project/vaccineapp)
+==1313600==    by 0x10928D: main (in /home/batch94-user4/project/vaccineapp)
+==1313600== 
+==1313600== HEAP SUMMARY:
+==1313600==     in use at exit: 144 bytes in 1 blocks
+==1313600==   total heap usage: 3 allocs, 2 frees, 2,192 bytes allocated
+==1313600== 
+==1313600== LEAK SUMMARY:
+==1313600==    definitely lost: 0 bytes in 0 blocks
+==1313600==    indirectly lost: 0 bytes in 0 blocks
+==1313600==      possibly lost: 0 bytes in 0 blocks
+==1313600==    still reachable: 144 bytes in 1 blocks
+==1313600==         suppressed: 0 bytes in 0 blocks
+==1313600== Rerun with --leak-check=full to see details of leaked memory
+==1313600== 
+==1313600== Use --track-origins=yes to see where uninitialised values come from
+==1313600== For lists of detected and suppressed errors, rerun with: -s
+==1313600== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)

@@ -1,0 +1,94 @@
+batch94-user4@instance-1:~/project/src$ splint ./vaccination_drive_main.c
+Splint 3.1.2 --- 21 Feb 2021
+
+vaccination_drive_main.c: (in function main)
+vaccination_drive_main.c:7:2: Return value (type int) ignored:
+                                 beneficiary_file...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+vaccination_drive_main.c:11:8: Variable choice used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+vaccination_drive_main.c:19:3: Return value (type int) ignored:
+                                  scanf("%d", &choice)
+vaccination_drive_main.c:22:11: Return value (type int) ignored:
+                                   vaccination_bene...
+vaccination_drive_main.c:24:11: Return value (type int) ignored: admin_login()
+vaccination_drive_main.c:31:2: Return value (type int) ignored:
+                                  beneficiary_list...
+vaccination_drive_main.c:32:2: Path with no return in function declared to
+                                  return int
+  There is a path through a function declared to return a value on which there
+  is no return statement. This means the execution may fall through without
+  returning a meaningful result to the caller. (Use -noret to inhibit warning)
+vaccination_drive_main.c: (in function vaccination_beneficiary_login)
+vaccination_drive_main.c:38:8: Variable choice2 used before definition
+vaccination_drive_main.c:42:3: Return value (type int) ignored:
+                                  scanf("%d", &cho...
+vaccination_drive_main.c:45:11: Return value (type int) ignored: new_user()
+vaccination_drive_main.c:47:11: Return value (type int) ignored:
+                                   registered_user()
+vaccination_drive_main.c:54:2: Path with no return in function declared to
+                                  return int
+vaccination_drive_main.c: (in function admin_login)
+vaccination_drive_main.c:57:8: Test expression for while not boolean, type int:
+                                  1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+vaccination_drive_main.c:61:3: Return value (type int) ignored:
+                                  system("read a")
+vaccination_drive_main.c:62:3: Return value (type int) ignored: system("clear")
+vaccination_drive_main.c:64:3: Return value (type int) ignored:
+                                  scanf("%s", admi...
+vaccination_drive_main.c:66:3: Return value (type int) ignored:
+                                  scanf("%s", pswd)
+vaccination_drive_main.c:70:4: Return value (type int) ignored: system("clear")
+vaccination_drive_main.c:76:5: Return value (type int) ignored:
+                                  scanf("%d", &ch1)
+vaccination_drive_main.c:79:13: Return value (type int) ignored:
+                                   view_beneficiary...
+vaccination_drive_main.c:81:13: Return value (type int) ignored:
+                                   add_beneficiary_...
+vaccination_drive_main.c:83:13: Return value (type int) ignored:
+                                   edit_beneficiary...
+vaccination_drive_main.c:85:13: Return value (type int) ignored:
+                                   delete_beneficia...
+vaccination_drive_main.c:87:13: Return value (type int) ignored:
+                                   display_fully_va...
+vaccination_drive_main.c:89:13: Return value (type int) ignored:
+                                   display_partiall...
+vaccination_drive_main.c:91:13: Return value (type int) ignored:
+                                   display_today_va...
+vaccination_drive_main.c:106:2: Path with no return in function declared to
+                                   return int
+vaccination_drive_main.c: (in function new_user)
+vaccination_drive_main.c:111:8: Variable choice2 used before definition
+vaccination_drive_main.c:113:3: Return value (type int) ignored:
+                                   system("read a")
+vaccination_drive_main.c:114:3: Return value (type int) ignored:
+                                   system("clear")
+vaccination_drive_main.c:118:3: Return value (type int) ignored:
+                                   scanf("%d", &cho...
+vaccination_drive_main.c:121:11: Return value (type int) ignored:
+                                    user_registration()
+vaccination_drive_main.c:123:11: Return value (type int) ignored:
+                                    edit_user_details()
+vaccination_drive_main.c:125:11: Return value (type int) ignored:
+                                    view_user_details()
+vaccination_drive_main.c:132:2: Path with no return in function declared to
+                                   return int
+vaccination_drive_main.c: (in function registered_user)
+vaccination_drive_main.c:137:8: Variable choice4 used before definition
+vaccination_drive_main.c:142:3: Return value (type int) ignored:
+                                   scanf("%d", &cho...
+vaccination_drive_main.c:145:11: Return value (type int) ignored:
+                                    select_center()
+vaccination_drive_main.c:147:11: Return value (type int) ignored: book_slot()
+vaccination_drive_main.c:149:11: Return value (type int) ignored:
+                                    view_details()
+vaccination_drive_main.c:151:11: Return value (type int) ignored:
+                                    get_vaccinated()
+vaccination_drive_main.c:159:2: Path with no return in function declared to
+                                   return int
+
+Finished checking --- 42 code warnings
